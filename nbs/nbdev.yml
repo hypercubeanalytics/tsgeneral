@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "tsgeneral"
+  site-url: "https://hypercubeanalytics.github.io/tsgeneral"
+  description: "general time series analysis"
+  repo-branch: main
+  repo-url: "https://github.com/hypercubeanalytics/tsgeneral"
