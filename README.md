@@ -41,3 +41,9 @@ print_something()
 ```
 
     4
+
+``` python
+test_prime()
+```
+
+    test priming
