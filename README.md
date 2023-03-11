@@ -17,33 +17,16 @@ pip install tsgeneral
 Fill me in please! Don’t forget code examples:
 
 ``` python
-simple_validator(1,2)
+path="https://demo-time-series.s3.us-east-2.amazonaws.com/no_error_file_valid_ex.csv"
+
+rs=read("csv",path)
+rs
 ```
 
-    this is the function simple_validator
-
-``` python
-read(1,2)
-```
-
-    this is the function read
-
-``` python
-print_something()
-```
-
-    something
-
-## TEST A TEST XXXXXXXXXXXXX
-
-``` python
-2+2
-```
-
-    4
-
-``` python
-test_prime()
-```
-
-    test priming
+    (True,
+        emp_id emp_name  emp_salary        date
+     0       1   rakesh       10.55  01-02-2020
+     1       2   ramesh       23.55  02-02-2020
+     2       3  radhesh       23.55  03-02-2020
+     3       4   ravesh       40.45  04-02-2020
+     4       5   ralesh       45.88  05-02-2020)
