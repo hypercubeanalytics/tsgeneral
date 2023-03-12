@@ -14,7 +14,7 @@ pip install tsgeneral
 
 ## How to use
 
-Fill me in please! Don’t forget code examples:
+**read**
 
 ``` python
 path="https://demo-time-series.s3.us-east-2.amazonaws.com/no_error_file_valid_ex.csv"
@@ -30,3 +30,22 @@ rs
      2       3  radhesh       23.55  03-02-2020
      3       4   ravesh       40.45  04-02-2020
      4       5   ralesh       45.88  05-02-2020)
+
+**create_schema**
+
+``` python
+col_dict = {"emp_id": int, 
+            "emp_name": str,
+            "emp_salary": float, 
+            "date": ("date", "%-%m-%Y"),
+           }
+
+create_schema(col_dict)
+```
+
+    (True,
+     {'emp_id': {'type': 'integer', 'coerce': int},
+      'emp_name': {'type': 'string', 'coerce': str},
+      'emp_salary': {'type': 'float', 'coerce': float},
+      'date': {'type': 'datetime',
+       'coerce': <function tsgeneral.hcingest.create_schema.<locals>.<lambda>(d)>}})
